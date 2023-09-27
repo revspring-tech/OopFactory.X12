@@ -1,4 +1,7 @@
 # OopFactory.X12
+##
+The is the RevSpring fork of this open source project. As mentioned below, it is no longer maintained. Our fork is based on the work required to modernize the project and build it in .NET 6+.
+
 ## Latest News
 Since no one seems to be maintaining this project anymore and I have need for a .NET Standard version of this library, I have taken the liberty of upgrading it to .NET 6.0. It should build on any environment that supports .NET 6.0 (Windows, Linux, MacOS). 
 ## Known Issues
