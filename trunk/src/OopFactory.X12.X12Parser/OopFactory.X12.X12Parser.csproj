@@ -15,8 +15,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
-    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.310801">
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.421302">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
@@ -26,26 +26,14 @@
 	<Target Name="CopyFiles" AfterTargets="PostBuildEvent">
 		<Message Text="Copying Output Files" Importance="High" />
 		<ItemGroup>
-			<DllFiles Include="$(TargetDir)*.dll"/>
-			<XmlFiles Include="$(TargetDir)*.xml"/>
-			<OutputFile Include="$(TargetDir)$(TargetName)$(TargetExt)*"/>
-            <Specifications Include="$(TargetDir)Specifications\*"/>
+			<DllFiles Include="$(TargetDir)*.dll" />
+			<XmlFiles Include="$(TargetDir)*.xml" />
+			<OutputFile Include="$(TargetDir)$(TargetName)$(TargetExt)*" />
+            <Specifications Include="$(TargetDir)Specifications\*" />
 		</ItemGroup>
-		<Copy
-			SourceFiles="@(Specifications)"
-			DestinationFolder="$(SolutionDir)Release\Specifications"
-		/>
-		<Copy
-			SourceFiles="@(DllFiles)"
-			DestinationFolder="$(SolutionDir)Release"
-		/>
-		<Copy
-			SourceFiles="@(XmlFiles)"
-			DestinationFolder="$(SolutionDir)Release"
-		/>
-		<Copy
-			SourceFiles="@(OutputFile)"
-			DestinationFolder="$(SolutionDir)Release"
-		/>
+		<Copy SourceFiles="@(Specifications)" DestinationFolder="$(SolutionDir)Release\Specifications" />
+		<Copy SourceFiles="@(DllFiles)" DestinationFolder="$(SolutionDir)Release" />
+		<Copy SourceFiles="@(XmlFiles)" DestinationFolder="$(SolutionDir)Release" />
+		<Copy SourceFiles="@(OutputFile)" DestinationFolder="$(SolutionDir)Release" />
 	</Target>
 </Project>
