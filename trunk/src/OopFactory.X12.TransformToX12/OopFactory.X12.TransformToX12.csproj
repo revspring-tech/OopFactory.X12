@@ -4,10 +4,6 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Exe</OutputType>
     <AssemblyName>TransformToX12</AssemblyName>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>

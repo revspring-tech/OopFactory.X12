@@ -4,10 +4,6 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Exe</OutputType>
     <AssemblyName>X12Parser</AssemblyName>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>

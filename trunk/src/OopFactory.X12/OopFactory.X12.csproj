@@ -2,10 +2,6 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <SccProjectName>%24/x12parser/trunk/src/OopFactory.X12</SccProjectName>
-    <SccLocalPath>.</SccLocalPath>
-    <SccAuxPath>https://tfs.codeplex.com/tfs/tfs11</SccAuxPath>
-    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
