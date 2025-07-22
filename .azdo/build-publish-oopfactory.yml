@@ -17,4 +17,10 @@ steps:
     packagesToPack: 'repo-source/trunk/src/OopFactory.X12/OopFactory.X12.csproj'
     nobuild: false
     versioningScheme: 'byBuildNumber'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'e2953e6a-3d5d-4da4-8684-ce422b27eeef/139128aa-03f6-40cf-89bd-711070314a4b'
 
