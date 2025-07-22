@@ -1,0 +1,20 @@
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger: none
+# - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+# NuGet Auth
+- task: NuGetAuthenticate@1
+      displayName: 'authenticate nuget feed'
+# Pack
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/OopFactory.X12.csproj'
+    nobuild: false
+    versioningScheme: 'byBuildNumber'
+
