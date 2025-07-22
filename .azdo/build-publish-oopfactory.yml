@@ -1,7 +1,7 @@
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 trigger: none
-# - main
+- main
 
 pool:
   vmImage: ubuntu-latest
