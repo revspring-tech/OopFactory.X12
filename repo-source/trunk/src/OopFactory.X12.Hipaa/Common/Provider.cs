@@ -54,6 +54,16 @@ namespace OopFactory.X12.Hipaa.Common
             set { }
         }
 
+        [XmlAttribute]
+        public string ProviderIdentificationNumber
+        {
+            get
+            {
+                return GetReferenceId("4A");
+            }
+            set { }
+        }
+
         public ProviderInformation ProviderInfo { get; set; }
     }
 }
